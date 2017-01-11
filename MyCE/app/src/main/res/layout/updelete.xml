@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:isScrollContainer="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/udFName"
+            android:hint="@string/first_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edit_text"
+            android:inputType="textPersonName|textCapWords"/>
+
+        <EditText
+            android:id="@+id/udLName"
+            android:hint="@string/last_lame"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edit_text"
+            android:inputType="textPersonName|textCapWords"/>
+
+        <EditText
+            android:hint="@string/email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edit_text"
+            android:inputType="textEmailAddress"
+            android:id="@+id/udEmail"/>
+
+        <EditText
+            android:id="@+id/udPosition"
+            android:hint="@string/position"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edit_text"
+            android:inputType="textCapWords"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/udUpdate"
+                android:text="@string/update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="start"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/custom_button"
+                android:drawableStart="@mipmap/ic_update_black_18dp"
+                android:drawableLeft="@mipmap/ic_update_black_18dp"
+                style="?android:attr/buttonBarStyle"/>
+
+            <Button
+                android:id="@+id/udDelete"
+                android:text="@string/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:layout_gravity="end"
+                android:background="@drawable/custom_button"
+                android:drawableStart="@mipmap/ic_delete_black_18dp"
+                android:drawableLeft="@mipmap/ic_delete_black_18dp"
+                style="?android:attr/buttonBarStyle"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/udClose"
+            android:text="@string/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+</ScrollView>

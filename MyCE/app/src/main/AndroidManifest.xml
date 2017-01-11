@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.lenovo_pc.myce">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <activity
+            android:name=".Login"
+            android:noHistory="true"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:noHistory="true"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".Menu"
+            android:label="@string/app_name"/>
+        <activity
+            android:name=".UpDelete"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.Modal"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".Add"
+            android:theme="@style/AppTheme.Modal"
+            android:noHistory="true"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            tools:replace="android:theme"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+    </application>
+</manifest>
